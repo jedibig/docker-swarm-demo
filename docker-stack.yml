@@ -1,6 +1,14 @@
 version: '3.3'
 
 services:
+  angular-demo:
+    image: jbowo/angular-demo
+    ports: 
+      - "80:8080"
+    networks:
+      - elk
+    deploy:
+      replicas: 3
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
