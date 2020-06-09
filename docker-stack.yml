@@ -75,6 +75,8 @@ services:
       - kibana
     networks:
       - elk
+    deploy:
+      mode: global
 
 configs:
 
